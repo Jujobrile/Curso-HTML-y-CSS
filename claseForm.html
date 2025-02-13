@@ -6,6 +6,30 @@
     <title>Document</title>
 </head>
 <body>
-    Hola
+    <h1>Este es un archivo con formularios</h1>
+    <form action="">
+        <label for="nombre">
+            <span>Nombre completo</span><br>
+            <input type="text" id="nombre" placeholder="John Doe" autocomplete="name" required>
+        </label><br><br>
+        <label for="id">
+            <span>Numero de identificación</span><br>
+            <input type="number" id="id" placeholder="1144768054" required>
+        </label><br><br>
+        <label for="email">
+            <span>Correo electrónico</span><br>
+            <input type="email" id="email" placeholder="john.doe@example.com" autocomplete="email" required>
+        </label><br><br>
+        <label for="">
+            <span>Pais</span><br>
+            <input list="pais"/>
+            <datalist id="pais">
+                <option value="Colombia"></option>
+                <option value="Mexico"></option>
+                <option value="Argentina"></option>
+                <option value="Panama"></option>
+            </datalist>
+        </label>
+    </form> 
 </body>
 </html>
